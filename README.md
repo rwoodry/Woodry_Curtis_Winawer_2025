@@ -2,9 +2,9 @@
 
 Paper: [Feedback scales the spatial tuning of cortical responses during visual working memory and long-term memory](https://pmc.ncbi.nlm.nih.gov/articles/PMC11042180/)
 
-Github:
+Github: [https://github.com/rwoodry/Woodry_Curtis_Winawer_2025](https://github.com/rwoodry/Woodry_Curtis_Winawer_2025)
 
-OSF:
+OSF: [https://osf.io/4mf8j/](https://osf.io/4mf8j/)
 
 OpenNeuro:
 
