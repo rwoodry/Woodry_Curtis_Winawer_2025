@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=64GB
+#SBATCH --time=96:00:00
+#SBATCH --output=slurmlog/%x_%j.out
+#SBATCH --error=slurmlog/%x_%j.err
+
+#SBATCH --mail-type=END
+#SBATCH --mail-user=rfw256@nyu.edu
+
+subj=$1
+derivatives_dir=$2
+
+module purge
+module load anaconda3/2020.07
+
+source activate /scratch/rfw256/oneshot/.penv
+pip install git+https://github.com/cvnlab/GLMsingle.git
+
+python3 glmsingle_run.py \
+    --subject $subj \
+    --derivatives_dir $derivatives_dir 

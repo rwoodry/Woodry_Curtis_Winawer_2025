@@ -1,0 +1,41 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=64GB
+#SBATCH --output=slurmlog/%x_%j.out
+#SBATCH --error=slurmlog/%x_%j.err
+#SBATCH --time=96:00:00
+
+
+subj=$1
+derivatives_dir=/scratch/rfw256/Interstellar/derivatives
+behavior_dir=/scratch/rfw256/Interstellar/behav
+
+module purge
+module load anaconda3/2020.07
+
+source activate /scratch/rfw256/oneshot/.penv
+
+te=$1
+sm=$2
+derivatives_dir=/scratch/rfw256/Interstellar/derivatives
+
+suffix="${te}_${sm}"
+
+
+for subj in 114 115 127 135 136 139 141 142; do 
+    python3 build_glmsingle_dataframes.py \
+        --subject $subj \
+        --derivatives_dir $derivatives_dir \
+        --target_ecc $te \
+        --sigma_multiplier $sm \
+        --suffix $suffix
+done
+
+
+python3 compute_respprofile.py \
+    --subjects "114 115 127 135 136 139 141 142" \
+    --model glmsingle \
+    --derivatives_dir /scratch/rfw256/Interstellar/derivatives \
+    --suffix $suffix

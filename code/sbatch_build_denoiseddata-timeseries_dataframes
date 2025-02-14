@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=64GB
+#SBATCH --output=slurmlog/%x_%j.out
+#SBATCH --error=slurmlog/%x_%j.err
+#SBATCH --time=96:00:00
+
+
+subj=$1
+model=$2
+derivatives_dir=/scratch/rfw256/Interstellar/derivatives
+behavior_dir=/scratch/rfw256/Interstellar/behav
+
+module purge
+module load anaconda3/2020.07
+
+source activate /scratch/rfw256/oneshot/.penv
+
+python3 build_denoiseddata-timeseries_dataframes.py \
+    --subject $subj \
+    --model $model \
+    --derivatives_dir $derivatives_dir \
+    --behavior_dir $behavior_dir \
+    --backpad 3 \
+    --window_size 20

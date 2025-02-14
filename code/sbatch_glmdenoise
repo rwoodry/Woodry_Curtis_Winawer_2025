@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=64GB
+#SBATCH --time=96:00:00
+#SBATCH --output=slurmlog/%x_%j.out
+#SBATCH --error=slurmlog/%x_%j.err
+
+subj=$1
+
+module purge
+module load matlab/2021a
+
+matlab -nodisplay -nosplash -nodesktop -r "subj=$subj;glmdenoise_run; exit;"
