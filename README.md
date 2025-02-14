@@ -9,8 +9,9 @@ OSF: [https://osf.io/4mf8j/](https://osf.io/4mf8j/)
 OpenNeuro:
 
 ## Paper Figures
+Data & code required for reproducing the figures can be found on OSF (linked above). 
 
-The scripts used to generate the figures in the paper are located in /paper/figures. There is a jupyter notebook and a python script for each one. These scripts rely on dataframes (.tsv files) stored in /derivatives/dataframes.
+The scripts used to generate the figures in the paper are located in /figures. There is a jupyter notebook and a python script for each one. These scripts rely on dataframes (.tsv files) stored in /derivatives/dataframes.
 
 Dataframes necessary for each figure:
 
