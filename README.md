@@ -17,19 +17,10 @@ Dataframes necessary for each figure:
 | **Figure** | Dataframes |
 | --- | --- |
 | 4 | /glmsingle/allsubj_vmfits_ang_dist_bin.tsv /glmsingle/bootstrap_vmfits/allsubj_vmfits_ang_dist_bin_batch_{1:20}.tsv /glmsingle/allsubj_dist_normedbetas_ang_dist_bin.tsv |
-| 5 | /glmsingle/allsubj_vmfits_sacc_ang_dist_bin_saccade-aligned.tsv
-/glmsingle/allsubj_vmfits_ang_dist_bin_target-aligned_comparison.tsv
-/glmsingle/allsubj_vmfits_ang_dist_bin_{7, 9, 12}_1.tsv |
-| 6 | /p-ltm-wm-cue-sacc-wmtarget/sub-wlsubj{XXX}/timeseries/denoiseddata_TTA_run-{01:100}.tsv
-/p-ltm-wm-cue-sacc-wmtarget/bootstrap_logfits/tta_logfits_batch_{1:20}.tsv |
-| 7 | /saccades/sub-all_saccades.tsv
-/saccades/trialwise_saccades.tsv
-/glmsingle/allsubj_vmfits_ang_dist_bin_saccsplit.tsv |
-| 8 | /glmsingle/allsubj_vmfits_ang_dist_bin.tsv
-/glmsingle/bootstrap_vmfits/allsubj_vmfits_ang_dist_bin_batch_{1:20}.tsv
-/favila_natcomms_2022_tuning.tsv
-/glmsingle/allsubj_vmfits_ang_dist_bin_nearmidfar.tsv
-/glmsingle/bootstrap_nearmidfar/allsubj_vmfits_ang_dist_bin_nearmidfar_batch_{1:20}.tsv |
+| 5 | /glmsingle/allsubj_vmfits_sacc_ang_dist_bin_saccade-aligned.tsv /glmsingle/allsubj_vmfits_ang_dist_bin_target-aligned_comparison.tsv /glmsingle/allsubj_vmfits_ang_dist_bin_{7, 9, 12}_1.tsv |
+| 6 | /p-ltm-wm-cue-sacc-wmtarget/sub-wlsubj{XXX}/timeseries/denoiseddata_TTA_run-{01:100}.tsv /p-ltm-wm-cue-sacc-wmtarget/bootstrap_logfits/tta_logfits_batch_{1:20}.tsv |
+| 7 | /saccades/sub-all_saccades.tsv /saccades/trialwise_saccades.tsv /glmsingle/allsubj_vmfits_ang_dist_bin_saccsplit.tsv |
+| 8 | /glmsingle/allsubj_vmfits_ang_dist_bin.tsv /glmsingle/bootstrap_vmfits/allsubj_vmfits_ang_dist_bin_batch_{1:20}.tsv /favila_natcomms_2022_tuning.tsv /glmsingle/allsubj_vmfits_ang_dist_bin_nearmidfar.tsv /glmsingle/bootstrap_nearmidfar/allsubj_vmfits_ang_dist_bin_nearmidfar_batch_{1:20}.tsv |
 
 ***Brackets {} are placeholders which denote multiple values, and therefore refer to multiple dataframes.
 
