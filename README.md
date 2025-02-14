@@ -16,9 +16,7 @@ Dataframes necessary for each figure:
 
 | **Figure** | Dataframes |
 | --- | --- |
-| 4 | /glmsingle/allsubj_vmfits_ang_dist_bin.tsv
-/glmsingle/bootstrap_vmfits/allsubj_vmfits_ang_dist_bin_batch_{1:20}.tsv
-/glmsingle/allsubj_dist_normedbetas_ang_dist_bin.tsv |
+| 4 | /glmsingle/allsubj_vmfits_ang_dist_bin.tsv /glmsingle/bootstrap_vmfits/allsubj_vmfits_ang_dist_bin_batch_{1:20}.tsv /glmsingle/allsubj_dist_normedbetas_ang_dist_bin.tsv |
 | 5 | /glmsingle/allsubj_vmfits_sacc_ang_dist_bin_saccade-aligned.tsv
 /glmsingle/allsubj_vmfits_ang_dist_bin_target-aligned_comparison.tsv
 /glmsingle/allsubj_vmfits_ang_dist_bin_{7, 9, 12}_1.tsv |
